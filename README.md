@@ -32,8 +32,13 @@ Inside the `gemini>` chat:
 Bash
 
 ```
-/rivals "Refactor the Tuesday mic DMX routing script for OLA" --max-attempts 8
+/rivals:loop "Refactor the Tuesday mic DMX routing script for OLA" --max-attempts 8
 ```
+
+### Options
+
+- `--max-attempts <N>`: Set a hard limit on how many times the rivalry will loop (Default: 5).
+- The loop terminates automatically when the agent outputs `<promise>COMPLETED</promise>`.
 
 ### Advanced Routing & Logic
 
