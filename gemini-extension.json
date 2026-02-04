@@ -1,0 +1,15 @@
+{
+  "name": "rivals",
+  "version": "1.0.0",
+  "description": "Team of Rivals Iterative Loop",
+  "hooks": {
+    "afterAgent": "hooks/stop-hook.sh"
+  },
+  "commands": [
+    {
+      "name": "loop",
+      "alias": "rivals",
+      "description": "Start a Team of Rivals coherence loop"
+    }
+  ]
+}
