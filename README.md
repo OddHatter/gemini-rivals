@@ -18,7 +18,7 @@ The loop utilizes a **RALPH** (Reasoning, Action, Learning from Performance Heur
 
 ## 📦 Installation
 ```bash
-gemini extensions install https://github.com/OddHatter/gemini-rivals]
+gemini extensions install https://github.com/OddHatter/gemini-rivals
 ````
 
 ---
