@@ -1,0 +1,14 @@
+# commands/loop.toml
+description = "Starts a Team of Rivals loop with adversarial auditing."
+
+# This prompt sets the initial 'Team of Rivals' persona for the session
+prompt = """
+Task: {{args}}
+
+Operating as a Team of Rivals:
+1. PLANNER: Set strict success criteria.
+2. EXECUTOR: Implement the solution.
+3. CRITIC: Audit the work.
+
+Do NOT output <promise>COMPLETED</promise> until the Critic is 100% satisfied.
+"""

@@ -8,7 +8,6 @@
   "commands": [
     {
       "name": "loop",
-      "alias": "rivals",
       "description": "Start a Team of Rivals coherence loop"
     }
   ]
