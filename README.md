@@ -12,7 +12,7 @@ Standard LLMs suffer from "self-correction blindness." **Rivals** breaks this by
 * **Executor:** Attempts the gauntlet (implementation).
 * **Critic:** Finds the flaws (auditing).
 
-The loop utilizes a **RALPH** (Reasoning, Action, Learning from Performance Heuristics) structure. The "Learning" happens when the **Critic** rejects the work, forcing a total re-reasoning in the next turn.
+The loop utilizes a **RALPH** (Reasoning, Action, Learning from Performance Heuristics) structure, inspired by the [ralph](https://github.com/gemini-cli-extensions/ralph) extension. The "Learning" happens when the **Critic** rejects the work, forcing a total re-reasoning in the next turn.
 
 ---
 
@@ -57,6 +57,8 @@ Use this for tasks where precision is non-negotiable:
 
 - **Architecture:** `AfterAgent` hook monitoring for the `<promise>COMPLETED</promise>` tag.
     
+- **Memory Management:** Clears internal session context between each loop iteration to prevent "context bloat" and ensure the Critic's feedback is evaluated with a fresh perspective.
+
 - **Auth:** Native terminal authentication (no API keys/env files needed).
     
 - **Isolation:** Session-aware state tracking in `/tmp` to support multi-terminal workflows.
